@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="CriticalOps PowerTech — Mission-critical UPS systems, batteries, and power infrastructure." />
+  <title>CriticalOps PowerTech | UPS Systems & Mission-Critical Power</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Use absolute paths so it works on Pages -->
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="CriticalOps PowerTech home">
+        <!-- Optional: use your logo -->
+        <!-- <img class="logoImg" src="/assets/logo.png" alt="CriticalOps PowerTech logo"> -->
+        <span class="brandMark" aria-hidden="true"></span>
+        <span class="brandText">
+          <span class="brandName">CriticalOps</span>
+          <span class="brandSub">PowerTech</span>
+        </span>
+      </a>
+
+      <button class="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <div class="navLinks" role="navigation" aria-label="Primary">
+        <a href="#solutions">Solutions</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a class="cta" href="#contact">Request a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="heroBg" aria-hidden="true">
+        <!-- HERO BACKGROUND IMAGE LAYER -->
+        <div class="heroImageLayer"></div>
+
+        <!-- Overlays to match mockup vibe + keep text readable -->
+        <div class="heroOverlay"></div>
+        <div class="heroGrid"></div>
+        <div class="heroNoise"></div>
+
+        <!-- Extra bolt layer (adds motion/glow even with image) -->
+        <svg class="heroBolts" viewBox="0 0 1600 520" preserveAspectRatio="none">
+          <defs>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <linearGradient id="boltGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(255,122,26,0)"/>
+              <stop offset="35%" stop-color="rgba(255,122,26,.95)"/>
+              <stop offset="60%" stop-color="rgba(255,154,61,.95)"/>
+              <stop offset="100%" stop-color="rgba(255,122,26,0)"/>
+            </linearGradient>
+          </defs>
+
+          <path class="bolt bolt1" filter="url(#glow)" stroke="url(#boltGrad)" stroke-width="4.5" fill="none"
+            d="M0,250 C120,235 160,210 260,220 C340,228 380,280 460,270 C540,258 600,235 690,245 C770,255 820,300 910,290 C1020,278 1090,240 1160,250 C1260,265 1320,320 1400,305 C1480,290 1520,270 1600,265"/>
+          <path class="bolt bolt2" filter="url(#glow)" stroke="url(#boltGrad)" stroke-width="3.5" fill="none"
+            d="M0,280 C110,270 180,245 260,255 C360,268 390,315 500,305 C610,295 650,255 740,265 C820,275 860,320 950,312 C1050,302 1120,262 1210,270 C1310,282 1360,330 1450,318 C1520,308 1560,292 1600,290"/>
+          <path class="bolt bolt3" filter="url(#glow)" stroke="url(#boltGrad)" stroke-width="2.8" fill="none"
+            d="M0,240 C140,220 220,260 340,240 C480,215 520,300 650,275 C780,250 820,210 930,230 C1040,250 1120,310 1240,290 C1400,265 1480,235 1600,245"/>
+          <path class="bolt bolt4" filter="url(#glow)" stroke="url(#boltGrad)" stroke-width="2.2" fill="none"
+            d="M0,310 C120,290 260,330 380,305 C520,275 560,345 700,320 C860,290 920,260 1040,275 C1180,295 1300,350 1460,320 C1520,308 1560,305 1600,305"/>
+        </svg>
+      </div>
+
+      <div class="container heroInner">
+        <div class="heroCopy">
+          <div class="eyebrow">Mission-critical power • UPS systems • Batteries • Power infrastructure</div>
+          <h1>Keep the lights on<br>when it matters most.</h1>
+          <p>
+            CriticalOps PowerTech delivers enterprise UPS solutions, battery systems, and power design support
+            for data centers, healthcare, industrial facilities, and high-availability operations.
+          </p>
+
+          <div class="heroActions">
+            <a class="btn primary" href="#contact">Get a Quote</a>
+            <a class="btn ghost" href="#solutions">Explore Solutions</a>
+          </div>
+
+          <div class="trustRow" aria-label="trust badges">
+            <div class="trustPill">Fast response</div>
+            <div class="trustPill">Enterprise-grade</div>
+            <div class="trustPill">Nationwide support</div>
+          </div>
+        </div>
+
+        <div class="heroCard">
+          <div class="cardTop">
+            <div class="cardTitle">Quick Estimate</div>
+            <div class="cardTag">Same-day follow-up</div>
+          </div>
+
+          <form class="cardForm" id="leadForm">
+            <label>
+              Name
+              <input name="name" placeholder="Your name" autocomplete="name" required />
+            </label>
+
+            <label>
+              Company
+              <input name="company" placeholder="Company / Facility" autocomplete="organization" />
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+            </label>
+
+            <label>
+              What do you need?
+              <select name="need" required>
+                <option value="" disabled selected>Select one…</option>
+                <option>New UPS system</option>
+                <option>Battery replacement</option>
+                <option>UPS upgrade / expansion</option>
+                <option>Emergency / outage support</option>
+                <option>Site power review</option>
+              </select>
+            </label>
+
+            <label>
+              Notes (kW/kVA, runtime, voltage, site details)
+              <textarea name="notes" rows="3" placeholder="Example: 200kVA, 480V, 15 min runtime, N+1…"></textarea>
+            </label>
+
+            <button class="btn primary full" type="submit">Request Quote</button>
+            <p class="finePrint">Demo form: opens your email client. (Can wire to Cloudflare Forms next.)</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="section" id="solutions">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Solutions</h2>
+          <p>End-to-end support for UPS procurement, battery systems, and reliability planning.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="tile">
+            <h3>UPS Systems</h3>
+            <p>Single systems to large parallel configurations. Support for 208V/480V modular and static designs.</p>
+            <ul class="bullets">
+              <li>New installs & replacements</li>
+              <li>Capacity planning & redundancy</li>
+              <li>Delivery + coordination</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>Battery Systems</h3>
+            <p>VRLA and lithium battery solutions, change-outs, and runtime validation planning.</p>
+            <ul class="bullets">
+              <li>Battery replacement programs</li>
+              <li>Runtime testing & reporting</li>
+              <li>Disposal coordination</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>Power Infrastructure</h3>
+            <p>Switchgear coordination, generator interface, and distribution strategy support.</p>
+            <ul class="bullets">
+              <li>Single-line review support</li>
+              <li>Load growth planning</li>
+              <li>Risk mitigation</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Need help sizing?</h3>
+            <p>Send your load list or single-line and we’ll help determine kVA, runtime, and redundancy targets.</p>
+          </div>
+          <a class="btn ghost" href="#contact">Talk to an Engineer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="section alt" id="industries">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Industries We Serve</h2>
+          <p>Where uptime is non-negotiable.</p>
+        </div>
+
+        <div class="grid4">
+          <div class="iconTile"><span class="icon">🏥</span><h3>Healthcare</h3><p>Hospitals, surgery centers, imaging, labs.</p></div>
+          <div class="iconTile"><span class="icon">🗄️</span><h3>Data Centers</h3><p>Colo, enterprise IT, edge compute.</p></div>
+          <div class="iconTile"><span class="icon">🏭</span><h3>Industrial</h3><p>Controls, automation, production lines.</p></div>
+          <div class="iconTile"><span class="icon">🏛️</span><h3>Public Sector</h3><p>Facilities, emergency operations, utilities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>How We Work</h2>
+          <p>A simple, reliable process that keeps projects moving.</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <div class="stepNum">1</div>
+            <div class="stepBody">
+              <h3>Discovery</h3>
+              <p>We capture voltage, load, runtime, redundancy goals, physical constraints, and timeline.</p>
+            </div>
+          </li>
+          <li>
+            <div class="stepNum">2</div>
+            <div class="stepBody">
+              <h3>Solution & Quote</h3>
+              <p>Right-size the UPS and battery solution with options (good / better / best).</p>
+            </div>
+          </li>
+          <li>
+            <div class="stepNum">3</div>
+            <div class="stepBody">
+              <h3>Execution Support</h3>
+              <p>Coordinate delivery, logistics, and partner install needs to minimize downtime.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section alt" id="about">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Built for uptime.</h2>
+            <p>
+              CriticalOps PowerTech focuses on mission-critical UPS systems and power reliability.
+              Our goal: deliver the right equipment, the right configuration, and a smooth path to commissioning.
+            </p>
+
+            <div class="stats">
+              <div class="stat"><div class="statNum">24/7</div><div class="statLabel">Critical response mindset</div></div>
+              <div class="stat"><div class="statNum">N+1</div><div class="statLabel">Redundancy-first planning</div></div>
+              <div class="stat"><div class="statNum">480V</div><div class="statLabel">Enterprise power ready</div></div>
+            </div>
+          </div>
+
+          <div class="aboutCard">
+            <h3>What you can expect</h3>
+            <ul class="bullets">
+              <li>Clear scope, clear quote, no fluff</li>
+              <li>Practical guidance on lead times & logistics</li>
+              <li>Options across price/performance tiers</li>
+              <li>Support for scaling: expansion and upgrades</li>
+            </ul>
+            <a class="btn primary full" href="#contact">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Request a Quote</h2>
+          <p>Tell us what you’re building — we’ll respond quickly with next steps.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="contactCard">
+            <h3>Contact</h3>
+            <p class="muted">Replace placeholders with your real details.</p>
+            <div class="contactLine"><span>📞</span> <a href="tel:+1-000-000-0000">+1 (000) 000-0000</a></div>
+            <div class="contactLine"><span>✉️</span> <a href="mailto:sales@criticalopspowertech.com">sales@criticalopspowertech.com</a></div>
+            <div class="contactLine"><span>📍</span> Southern California • Nationwide</div>
+
+            <div class="miniDivider"></div>
+
+            <h3>Capabilities</h3>
+            <ul class="bullets">
+              <li>UPS system sizing & procurement</li>
+              <li>Battery replacement programs</li>
+              <li>Power planning support</li>
+            </ul>
+          </div>
+
+          <div class="contactCard">
+            <h3>Send a message</h3>
+            <form id="contactForm">
+              <div class="twoCol">
+                <label>First name<input name="firstName" required></label>
+                <label>Last name<input name="lastName" required></label>
+              </div>
+              <label>Email<input name="email" type="email" required></label>
+              <label>Phone<input name="phone" inputmode="tel"></label>
+              <label>Message<textarea name="message" rows="5" required placeholder="kVA/kW, voltage, runtime, site details, timeline…"></textarea></label>
+              <button class="btn primary full" type="submit">Send</button>
+              <p class="finePrint">Demo form: opens your email client.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <div class="footerBrand">
+          <span class="brandMark small" aria-hidden="true"></span>
+          <div>
+            <div class="footerName">CriticalOps PowerTech</div>
+            <div class="muted">Mission-critical UPS systems & power infrastructure</div>
+          </div>
+        </div>
+
+        <div class="footerLinks">
+          <a href="#solutions">Solutions</a>
+          <a href="#industries">Industries</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="muted tiny">© <span id="year"></span> CriticalOps PowerTech. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
